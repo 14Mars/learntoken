@@ -1,0 +1,4 @@
+.idea/artifacts/service_consumer_war.xml
+.idea/*
+target/*
+*.iml
