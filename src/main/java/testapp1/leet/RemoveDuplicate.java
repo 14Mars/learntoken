@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 /**
  * Created by bao on 2018/5/30.
- *   É¾³ıÅÅĞòÊı×éÖĞµÄÖØ¸´Ïî
+ *   É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½Ø¸ï¿½ï¿½ï¿½
  */
 
 
@@ -23,7 +23,7 @@ class Solution {
 
         int result = 0;
         int current = result + 1;
-        //Á½¸öÓÎ±ê£¬ÈôÏàµÈÔòÖ±½ÓÍùºó×ß
+        //ï¿½ï¿½ï¿½ï¿½ï¿½Î±ê£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         while (current < nums.length) {
             System.out.println("result:" + result + "," + nums[result] + "," + "current:" + current + "," + nums[current]);
             if (nums[result] != nums[current]) {
@@ -41,6 +41,25 @@ class Solution {
 
 
     }
+
+    public int removeDuplicates2(int[] nums){
+        if(nums == null || nums.length == 0){
+            return 0;
+        }
+        int j = 0;
+        for(int i = 1;i<nums.length;i++){
+            if(nums[i] != nums[j]){
+                nums[++j] = nums[i];
+            }
+        }
+        return j+1;
+    }
+
+
+
+
+
+
 }
 
 public class RemoveDuplicate {
