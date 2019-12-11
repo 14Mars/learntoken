@@ -7,7 +7,7 @@ package testapp1.leet;
 public class LongestSubstring {
 
     public int lengthOfLongestSubstring(String s) {
-
+return 0;
     }
 
 
