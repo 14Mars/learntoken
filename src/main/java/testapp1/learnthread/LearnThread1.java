@@ -4,7 +4,8 @@ package testapp1.learnthread;
 public class LearnThread1 {
 
     /**
-     * current thread
+     * 查看current thread: isAlive
+     *
      * @param args
      */
     public static void main1(String args[]){
