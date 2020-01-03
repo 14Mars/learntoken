@@ -21,8 +21,6 @@ public class MyObject {
 
     public void getValue() {
         synchronized (username) {
-
-
             System.out.println("getValue method, thread name " + Thread.currentThread().getName()
                     + " username " + username + " password " + password);
         }

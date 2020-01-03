@@ -5,6 +5,9 @@ import com.google.common.collect.Lists;
 
 import java.util.List;
 
+/**
+ * 通过中间变量的状态来进行线程间的通信
+ */
 public class Entry {
 
 

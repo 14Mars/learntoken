@@ -3,6 +3,9 @@ package testapp1.learnthread.learnthread1_9;
 
 import java.time.Instant;
 
+/**
+ * 测试yield
+ */
 public class MyThread1_9 extends Thread{
 
     @Override

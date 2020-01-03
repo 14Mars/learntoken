@@ -1,6 +1,8 @@
 package testapp1.learnthread.learnthread2_1;
 
-
+/**
+ * 测试synchronized
+ */
 public class LearnThread2_1 {
     /**
      * 访问同一个对象，锁为该对象

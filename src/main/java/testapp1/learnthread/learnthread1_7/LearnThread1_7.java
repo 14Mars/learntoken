@@ -1,6 +1,8 @@
 package testapp1.learnthread.learnthread1_7;
 
-
+/**
+ * 测试线程
+ */
 public class LearnThread1_7 {
 
     public static void main(String[] args) {
