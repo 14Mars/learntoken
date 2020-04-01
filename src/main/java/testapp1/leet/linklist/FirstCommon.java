@@ -29,8 +29,8 @@ public class FirstCommon {
 
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
 
-        ListNode a
-
+//        ListNode a
+                     return null;
 
     }
 
