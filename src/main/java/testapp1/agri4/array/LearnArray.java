@@ -15,6 +15,8 @@ public class LearnArray {
 
         System.out.println(calcMean(mean));
 
+        System.out.println(copyArray(find));
+
 
     }
 
@@ -42,6 +44,7 @@ public class LearnArray {
 
     /**
      * 找最大值
+     *
      * @param array
      * @return
      */
@@ -65,6 +68,7 @@ public class LearnArray {
 
     /**
      * 计算平均值
+     *
      * @param array
      * @return
      */
@@ -81,6 +85,36 @@ public class LearnArray {
         }
         return total / array.length;
     }
+
+
+    /**
+     * 复制数组
+     * @param source
+     * @return
+     */
+    public static int[] copyArray(int[] source) {
+        int[] target = new int[source.length];
+
+        for (int i = 0; i < source.length; i++) {
+            target[i] = source[i];
+        }
+
+        return target;
+    }
+
+
+    public static int[] reverseArray(int[] source)    {
+    return null;
+
+    }
+
+
+//    public static int[][] twoDimArray(){
+//        int[][] array;
+////        int
+//
+//    }
+
 
 
 
