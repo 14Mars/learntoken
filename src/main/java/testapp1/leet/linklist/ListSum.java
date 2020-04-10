@@ -15,6 +15,7 @@ public class ListSum {
         ListNode head = new ListNode(-1);
         ListNode tail = head;
 
+        //边界场景，判断
         if (l1 == null && l2 == null) {
             return null;
         }
@@ -25,19 +26,26 @@ public class ListSum {
             return l1;
         }
 
+        //分别两个链表的指针
         ListNode p1 = l1;
         ListNode p2 = l2;
 
+        //进位
         boolean carry = false;
 
+        //只要有一个不为空，就可以计算
+        //在下面需要对为空的做判断
         while (p1 != null || p2 != null || carry) {
             int val1 = 0;
             int val2 = 0;
             int carryValue = 0;
+
+            //空则为0
             if (p1 != null) {
                 val1 = p1.val;
                 p1 = p1.next;
             }
+            //空则为0
             if (p2 != null) {
                 val2 = p2.val;
                 p2 = p2.next;
@@ -46,6 +54,7 @@ public class ListSum {
                 carryValue = 1;
             }
 
+            //
             int sum = val1 + val2 + carryValue;
             if (sum >= 10) {
                 sum = sum - 10;
@@ -54,6 +63,7 @@ public class ListSum {
                 carry = false;
             }
 
+            //使用新节点，
             ListNode current = new ListNode(sum);
             if (head.next == null){
                 head.next = current;
@@ -65,8 +75,5 @@ public class ListSum {
         }
 
         return head.next;
-
     }
-
-
 }
