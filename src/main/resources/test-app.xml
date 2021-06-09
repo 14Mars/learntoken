@@ -8,8 +8,7 @@
        				   http://www.springframework.org/schema/context/spring-context.xsd"
 	   default-autowire="byName">
 
-	<bean id="bizService" class="com.demo.spring.biz.DefaultBizServiceImpl">
-
-	</bean>
+	<bean id="bizService" class="com.demo.spring.biz.DefaultBizServiceImpl"/>
 	
+
 </beans>
