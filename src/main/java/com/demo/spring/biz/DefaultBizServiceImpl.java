@@ -1,6 +1,8 @@
 package com.demo.spring.biz;
 
+import org.springframework.stereotype.Service;
 
+@Service
 public class DefaultBizServiceImpl implements BizService {
     @Override
     public Integer readService(Integer source) {
