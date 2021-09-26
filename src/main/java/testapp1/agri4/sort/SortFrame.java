@@ -9,7 +9,9 @@ public class SortFrame {
     public static void main(String[] args) {
         Integer[] a = {10, 1, 3, 5, 7, 2, 4, 8, 6, 9};
 
-        compareSort(a);
+//        compareSort(a);
+
+        insertionSort(a);
 
         print(a);
 
@@ -85,21 +87,35 @@ public class SortFrame {
 
 
     /***
-     * 比较排序
+     * 比较排序,选择排序
+     * 每一趟，选出最小的，和该趟一个元素交换
+     *
      * @param toSort
      */
     public static void compareSort(Comparable[] toSort) {
         for (int i = 0; i < toSort.length; i++) {
             //初始化第一个为最小
-            Comparable min = toSort[i];
             int minIndex = i;
             for (int j = i + 1; j < toSort.length; j++) {
-                if (isLess(toSort[j], min)) {
-                    min = toSort[j];
+                if (isLess(toSort[j], toSort[minIndex])) {
                     minIndex = j;
                 }
             }
             switchElement(toSort, i, minIndex);
+        }
+    }
+
+
+    /**
+     * 插入排序
+     *
+     * @param toSort
+     */
+    public static void insertionSort(Comparable[] toSort) {
+        for (int i = 1; i < toSort.length; i++) {
+            for (int j = i; j > 0 && isLess(toSort[j], toSort[j - 1]); j--) {
+                switchElement(toSort, j, j - 1);
+            }
         }
     }
 
