@@ -14,6 +14,7 @@ public class streamTest {
         });
 
 
+
         testStream
                 .limit(3)
                 .peek(s -> System.out.println("peek"+s))
